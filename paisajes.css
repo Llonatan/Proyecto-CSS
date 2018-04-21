@@ -1,0 +1,157 @@
+body{
+	font-family: Dancing Script;
+	background: #02010a;
+}
+
+#cabecera{
+	background: #5b7989;
+	color: white; 
+
+	-webkit-display:flex;
+	display: flex;
+	-webkit-flex: row;
+	flex: flex-grow;
+	-webkit-flex-grow: row-wrap;
+	flex: row-wrap;
+	justify-content: space-between;
+	align-items: center;
+    -webkit-border-radius: 15px;
+    border-radius: 15px 15px 0 0; 
+    animation: anim 2s;
+
+}
+@keyframes anim{
+0%{
+    margin-top: 150%;
+}
+60%{
+    margin-top: -5%;
+}
+100%{
+    margin-top: 0%;
+}
+}
+.titulo h1{
+    text-shadow: 2px 2px #02010a;
+    margin-left: 30px;
+}
+.menu a{   
+	text-decoration: none;
+	margin-right: 30px;
+	color: white;
+}
+.menu a:link{
+	text-decoration: underline;
+}
+.menu a:hover{
+	text-decoration: none;
+}
+
+
+
+
+
+.imagenes{
+	background: #d5c75f;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	padding: 2%;
+}
+.imagenes div{
+	width: 30%;
+	height: 35%;
+}
+.imagenes img{
+	width: 100%;
+}
+
+.uno{
+   margin-bottom: 7%;
+   filter: blur(10px);
+   box-shadow: 2px 2px #02010a;
+}
+.dos{
+    margin-bottom: 7%;
+    filter: grayscale(100%);
+	box-shadow: 2px 2px #02010a;
+}
+.tres{
+    margin-bottom: 7%;
+    filter: sepia(90%);
+	box-shadow: 2px 2px #02010a;
+}
+.cuatro{
+	filter: grayscale(100%);
+	box-shadow: 2px 2px #02010a;
+}
+.cinco{
+	box-shadow: 2px 2px #02010a;
+
+}
+.seis{
+    filter: grayscale(100%);
+	box-shadow: 2px 2px #02010a;
+}
+
+
+
+footer{
+ 	color: black;
+ 	background: #C6d5c5;
+ 	-webkit-border-radius: 0 0 10px 10px;
+ 	border-radius: 0 0 10px 10px;
+
+ 	-webkit-display: flex;
+ 	display: flex;
+ 	-webkit-flex: row;
+ 	flex: row;
+ }
+ footer div{
+    width: 25%;
+    text-align: center;
+ }
+footer img{
+    width: 10%;
+    height:10%;
+    align-items: left;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+
+@media(min-width: 900px){
+   .contenido{
+    width: 900px;
+    margin-right: auto;
+    margin-left: auto;
+   }
+}
+@media(max-width: 899px){
+	.contenido{
+	width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+	}
+    #cabecera{
+    flex-direction: column;
+    justify-content: center;
+    }
+    .menu{
+    margin-left: 53px;
+    }
+    .imagenes{
+    flex-direction: column;
+    }
+    .imagenes div{
+    width: 100%;
+    }
+    footer{
+    flex-direction: column;
+    justify-content: center;
+    }
+    footer div{
+    width: 100%;
+    }
+}
